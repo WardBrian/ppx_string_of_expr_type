@@ -1,0 +1,9 @@
+(library
+ (public_name ppx_string_of_expr_type)
+ (name ppx_string_of_expr_type)
+ (kind ppx_rewriter)
+ (libraries ppxlib)
+ (instrumentation.backend
+  (ppx ppx_string_of_expr_type))
+ (preprocess
+  (pps ppxlib.metaquot)))
